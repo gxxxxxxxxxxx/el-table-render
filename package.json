@@ -1,0 +1,24 @@
+{
+  "name": "el-table-render",
+  "version": "1.0.0",
+  "description": "A el-table compponent by render descrebtion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gxxxxxxxxxxx/el-table-render.git"
+  },
+  "keywords": [
+    "el-table",
+    "render"
+  ],
+  "types": "types/index.d.ts",
+  "author": "gxx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gxxxxxxxxxxx/el-table-render/issues"
+  },
+  "homepage": "https://github.com/gxxxxxxxxxxx/el-table-render#readme"
+}
