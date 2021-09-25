@@ -4,6 +4,6 @@ export interface column extends TableColumn {
   render: () => VNode;
 }
 
-export declare class ElTableRender extends Table {
+export default class ElTableRender extends Table {
   columns: column[];
 }
