@@ -24,6 +24,9 @@ export default {
             : {
               default: props => {
                 return column.render ? column.render(h, props) : props.row[column.prop]
+              },
+              header: props => {
+                return column.headerRender ? column.headerRender(h, props) : props.column.label
               }
             }
         })
