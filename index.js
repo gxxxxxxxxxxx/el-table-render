@@ -19,6 +19,9 @@ export default {
           props: {
             ...column
           },
+          on: {
+            ...ctx.data.on
+          },
           scopedSlots: column.type
             ? {}
             : {
