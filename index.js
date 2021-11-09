@@ -12,15 +12,15 @@ export default {
       {
         props: {
           ...ctx.data.attrs
-        }
+        },
+        on: {
+          ...ctx.data.on
+        },
       },
       ctx.props.columns.map(column =>
         h('el-table-column', {
           props: {
             ...column
-          },
-          on: {
-            ...ctx.data.on
           },
           scopedSlots: column.type
             ? {}
