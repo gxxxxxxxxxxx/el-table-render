@@ -16,6 +16,7 @@ export default {
         on: {
           ...ctx.data.on
         },
+        ref: ctx.data.ref
       },
       ctx.props.columns.map(column =>
         h('el-table-column', {
@@ -25,13 +26,13 @@ export default {
           scopedSlots: column.type
             ? {}
             : {
-              default: props => {
-                return column.render ? column.render(h, props) : props.row[column.prop]
-              },
-              header: props => {
-                return column.headerRender ? column.headerRender(h, props) : props.column.label
+                default: props => {
+                  return column.render ? column.render(h, props) : props.row[column.prop]
+                },
+                header: props => {
+                  return column.headerRender ? column.headerRender(h, props) : props.column.label
+                }
               }
-            }
         })
       )
     )
