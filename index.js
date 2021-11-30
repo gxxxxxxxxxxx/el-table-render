@@ -13,10 +13,9 @@ export default {
         props: {
           ...ctx.data.attrs
         },
-        on: {
-          ...ctx.data.on
-        },
-        ref: ctx.data.ref
+        on: ctx.data.on,
+        ref: ctx.data.ref,
+        directives: ctx.data.directives || []
       },
       ctx.props.columns.map(column =>
         h('el-table-column', {
