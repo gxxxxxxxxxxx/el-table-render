@@ -1,6 +1,6 @@
 {
   "name": "el-table-render",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A el-table compponent by render descrebtion",
   "main": "index.js",
   "scripts": {
