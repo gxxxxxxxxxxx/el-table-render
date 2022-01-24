@@ -28,7 +28,7 @@ export default {
                   }
                 }
             },
-            Array.isArray(column.children) && listRender(column.children)
+            Array.isArray(column.children) ? listRender(column.children) : []
           )
         )
     }

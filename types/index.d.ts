@@ -3,7 +3,7 @@ import { VNode } from "vue";
 export interface column extends TableColumn {
   render: () => VNode;
   headerRender: () => VNode;
-  children: column;
+  children: column[];
 }
 
 export default class ElTableRender extends Table {
