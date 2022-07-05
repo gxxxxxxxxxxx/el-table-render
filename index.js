@@ -1,6 +1,6 @@
 const renderColumnDictMap = (dict, value) => {
-  if (Array.isArray(dict)) {
-    return dict.find(item => item.key === value)?.value || value
+  if (Array.isArray(dict) && dict.find(item => item.key === value) ) {
+    return dict.find(item => item.key === value).value 
   } else {
     return value
   }
