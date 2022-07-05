@@ -49,6 +49,7 @@ export default {
         },
         on: ctx.data.on,
         ref: ctx.data.ref,
+        key: ctx.props.columns,
         directives: ctx.data.directives || []
       },
       listRender(ctx.props.columns)
