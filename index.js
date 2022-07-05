@@ -1,3 +1,11 @@
+const renderColumnDictMap = (dict, value) => {
+  if (Array.isArray(dict)) {
+    return dict.find(item => item.key === value)?.value || value
+  } else {
+    return value
+  }
+}
+
 export default {
   functional: true,
   props: {
@@ -21,7 +29,7 @@ export default {
                 ? {}
                 : {
                   default: props => {
-                    return column.render ? column.render(h, props) : props.row[column.prop]
+                    return column.render ? column.render(h, props) : renderColumnDictMap(column.dict, props.row[column.prop])
                   },
                   header: props => {
                     return column.headerRender ? column.headerRender(h, props) : props.column.label
